@@ -12,6 +12,12 @@ const nextConfig = {
         protocol: "https",
         hostname: "cdn.flyonui.com",
       },
+      {
+        protocol: "https",
+        hostname: "placehold.co",
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
 };

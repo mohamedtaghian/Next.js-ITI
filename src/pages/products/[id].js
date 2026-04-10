@@ -100,7 +100,8 @@ export async function getStaticPaths() {
 export async function getStaticProps(context) {
   const { id } = context.params;
 
-  const res = await fetch(`https://dummyjson.com/products/${id}`);
+  // const res = await fetch(`https://dummyjson.com/products/${id}`);
+  const res = await fetch(`http://localhost:3000/api/products/${id}`);
   const data = await res.json();
 
   if (!data.id) {
